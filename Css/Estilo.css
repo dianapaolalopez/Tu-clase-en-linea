@@ -1,0 +1,98 @@
+#imglogo{
+    width:4em;
+}
+#login{
+    width: 100%;
+}
+
+body{
+    background-image: url('../Images/texturewall.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#foot{
+    background: linear-gradient(0deg, #8c0000, #dc3545 );
+}
+
+.navbar{
+    padding: 0px 10px 0px 10px;
+    border-color: brown;
+    border-style: double;
+    background: linear-gradient(0deg, #8c0000, #dc3545 );
+}
+
+#flogin{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+  
+    width: 100%;
+    border-color: brown;
+    border-style: double;
+}
+
+/* letra mas pequeña en el link de registro */
+
+#regiter{
+    font-size: small;
+}
+
+/* letra mas pequeña del footer  */
+#creado{
+    font-size: x-small;
+    color: antiquewhite;
+}
+
+/* color de la letra */
+
+h1{
+    background-color: #deb887b5;
+}
+/* recuadro en los textos, con borde circular  */
+
+#pPrincipal{
+    background-color: #ffffff8a;
+    border-radius: 5px;
+}
+/* 
+boton del scroll para subir  */
+.ir-arriba {
+    display: inline;
+    border-radius: 100%;
+    padding: 5px 15px 10px 15px;
+    background: #dc3545c2;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* le da al menu un toque rosa  dejandolo seleccionado  */
+.active {
+    background: #dea6d782;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+/* color en el formulario de registro inferior click aqui */
+#lregreso {
+     background-color: #a9a9a9a1;
+}
+/* color gris en el formulario  */
+#cardfondo{
+    border: 1px solid #415161!important;
+}
+/* color rosado del formulario  */
+#cardbodyfondo{
+background-color: rosybrown;
+}
+/* curva del formulario  */
+.card-header{
+border-radius: 5px 5px 0px 0px;
+}
+
+

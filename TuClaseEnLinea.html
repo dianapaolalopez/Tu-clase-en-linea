@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tu Clase En Linea</title>
+
+    <!--<h1 id="Titulo">Bienvenidos A</h1 NO VAA!!!-->
+
+    <!--<h2 id="SubTitulo"><strong><em>Tu Clase En Linea</em></strong></h2> NO VAAAA!!!-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="Css/Estilo.css">
+        <script> 
+            $(document).ready(function () {
+      
+                  $('#100').addClass("active");
+      
+                  $('.ir-arriba').click(function () {
+                  $('body, html').animate({
+                      scrollTop: '0px'
+                  }, 300);
+                  activarclase("1");
+              });
+      
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 0) {
+                      $('.ir-arriba').slideDown(300);
+                  } else {
+                      $('.ir-arriba').slideUp(300);
+                  }
+              });
+          });
+          function activarclase(comp) {
+              let id = comp;
+              //alert(id);
+              for (var i = 0; i < 10; i++) {
+                  if (id == i) {
+                      $('#m' + i).addClass("active");
+                  } else {
+                      $('#m' + i).removeClass("active");
+                  }
+              }
+          }
+      </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md fixed-top bg-danger navbar-dark">
+        <!-- la imagen o logo del menu  -->
+        <a class="navbar-brand" href="#">  
+            <img src="Images/Logo.png" id="imglogo" alt="logo">
+        </a>
+        <!-- icono para el menu de dispositivos moviles -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!---->
+        <!-- opciones de menu -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item dropdown" id="100">
+                    <a class="nav-link dropdown-toggle" href="TuClaseEnLinea.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        A Cerca de
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="TuClaseEnLinea.html" id="m1"  onclick="activarclase(1)">Principal</a>
+                        <a class="dropdown-item" href="#clase"  id="m2"  onclick="activarclase(2)">Tu clase en linea</a>
+                        <a class="dropdown-item" href="#beneficios"  id="m3"  onclick="activarclase(3)">Beneficios</a>
+                        <a class="dropdown-item" href="#soporte"  id="m4"  onclick="activarclase(4)">Soporte y Mantenimiento</a>
+                    </div>
+                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingreso.html"  id="101">Portal Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Formulario.html"  id="102">Inscribete</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- fin del menu -->
+    </nav>
+
+
+--><br><br><br><br>
+
+    <div>
+        <section id="clase">
+            <h1 class="text-center ">Tu Clase en linea</h1>
+            <div class="container col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <img src="Images/imagenprincipal.jpg" class="img-fluid" alt="" id="cimg1">
+
+            </div>
+            <br>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 text-center container">
+
+                <p id="pPrincipal">Tu clase en linea esta diseñada para facilitar el aprendizaje de los<br>
+                    estudiantes haciendo uso de las herramientas tecnologicas. Tambien <br>
+                    esta diseñada con el fin de integrar todos los procesos escolares <br>
+                    como la gestion de actividades, notas, y todo el proceso academico.<br>
+                    Teniendo siempre el acompañamiento de los profesores o tutores para<br>
+                    poder tener un proceso oportuno en el desarrollo de los estudiantes.
+                </p>
+            </div>
+        </section>
+        <br>
+        <section id="beneficios">
+            <h1 class="text-center">Beneficios</h1>
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 container" id="pPrincipal">
+            <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12  container">
+                <p>Entre los beneficios mas significativos que se encuentran tanto para los<br>
+                    estudiantes como para las instituciones son los siguientes:</p>
+            </div>
+            <div class="container">
+                <ul>
+                    <li>Accesibilidad las 24 horas.</li>
+                    <li>Atencion personalizada.</li>
+                    <li>Privacidad de la informacion.</li>
+                    <li>Control de las actividades.</li>
+                    <li>Informacion detallada de la institucion y profesorado.</li>
+                    <li>Actualizacion constante de actividades y calificaciones.</li>
+
+                </ul>
+            </div>
+        </div>
+        </section>
+        <br>
+        <section id="soporte">
+        <h1 class="text-center">Soporte y Mantenimiento</h1>
+        <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 text-center container" id="pPrincipal">
+            <p>Para obtener ayuda oportuna si presentas alguna falla durante<br />
+                las sesiones, o actualizaciones que realices en la plataforma<br />
+                escribenos a: <strong>soporte@tuclaseenlinea.com.co</strong></p>
+            <p>Tambien puedes comunicarte a la linea de atencion <strong>+570000000</strong></p>
+        </div>
+    </section>
+    <span class="ir-arriba">/\</span>
+    </div>
+   
+
+
+<footer>
+    <div class="row">
+        <div class="container-fluid bg-danger" id="foot">
+            <!-- pie de pagina de la pagina -->       
+            <p class="text-center" id="creado">Creado por: Tu clase en linea<br>&copy; 2020</p>       
+        </div>
+    </div>
+</footer>
+</body>
+
+
+
+</html>
